@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: meu-nginx-app
+  description: Aplicacao Nginx gerenciada via GitOps no K3s com ArgoCD
+  annotations:
+    github.com/project-slug: SEU_USUARIO_GITHUB/argocd-demo-app
+    argocd/app-name: app-nginx-lab
+spec:
+  type: service
+  lifecycle: experimental
+  owner: group:default/guests
